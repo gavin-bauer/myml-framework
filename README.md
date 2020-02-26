@@ -9,8 +9,8 @@
 **MyML Framework** is a personal machine learning framework to automate the implementation of models, including the preprocessing steps by _trying different algorithms and topologies, to minimize error when the model is used on test data._
 
 This project is still in its early stages as:
-- The data is assumed to have already been collected, cleaned and prepared (as the project was tested on Kaggle datasets)
-- The author is experimenting with modular programming (vs. notebooks)
+- The data is assumed to have already been collected, cleaned and prepared (as the project was tested on Kaggle datasets);
+- The author is experimenting with modular programming (vs. notebooks);
 - The implementation of a GUI after deployment will be added in the future.
 
 <br/>
@@ -18,9 +18,9 @@ This project is still in its early stages as:
 ## The project structure
 
 The main app is located in the _src_ folder which itself is divided in:
-- _data_ contains the scripts to download the datasets
-- _features_ contains the scripts to turn raw data into features for modeling
-- _models_ contains the scripts to train models and then use trained models to make predictions
+- _data_ contains the scripts to download the datasets;
+- _features_ contains the scripts to turn raw data into features for modeling;
+- _models_ contains the scripts to train models and then use trained models to make predictions.
 
 <br/>
 
@@ -34,7 +34,7 @@ The main app is located in the _src_ folder which itself is divided in:
 $ git clone git@github.com:https://github.com/gavin-bauer/myml-framework.git
 ```
 
-2. Install the requirements
+2. Install the requirements.
 
 3. Download or Open your IDE (i.e. [Visual Studio Code](https://code.visualstudio.com/)) and start editing the files in _src_.
 
@@ -43,7 +43,7 @@ $ git clone git@github.com:https://github.com/gavin-bauer/myml-framework.git
 1. **Downloading and preprocessing datasets**: Open the 3 Python scripts in the folders _data_ and _features_, fill the path variables. In the terminal, run the scripts in their numerical order using the following command:
 
 ```
-python src\[sub_folder]\[script_name].py
+python src/[sub_folder]/[script_name].py
 ```
 
 2. **Benchmark models**: Open _dispatcher.py_ and fill the _MODELS_ dictionary. For each model, use the name of the algorithm as the _key_, and the scikit-learn function corresponding to the model as the _value_ (e.g. "SVC": svm.SVC(kernel="linear")). Then, in the terminal, run the following command:
